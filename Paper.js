@@ -1,4 +1,4 @@
-class Paper
+class paper
 {
 	constructor(x,y,r)
 	{
@@ -12,18 +12,18 @@ class Paper
 			}
 		this.x=x;
 		this.y=y;
-		this.r=r
+		this.r=r;
+
 		this.body=Bodies.circle(this.x, this.y, this.r/2, options)
 		World.add(world, this.body);
-
+        
 	}
 	display()
 	{
 			
-			var pos=this.body.position;		
-
+			var paperpos=this.body.position;		
 			push()
-			translate(pos.x, pos.y);
+			translate(paperpos.x, paperpos.y);
 			rectMode(CENTER)
 			strokeWeight(3);
 			fill(255,0,255)
